@@ -1,18 +1,12 @@
 import "../App.css";
+import Button from "@mui/material/Button";
 
-const buttonStyling = {
-  padding: "10px 20px",
-  background: "rgb(0, 255, 0",
-  border: "none",
-  borderRadius: 5,
-};
-
-const Button = (props) => {
+const Tombol = (props) => {
   return (
-    <button style={buttonStyling} onClick={props.onClick}>
+    <Button variant="contained" color="success" onClick={props.onClick}>
       {props.text}
-    </button>
+    </Button>
   );
 };
 
-export default Button;
+export default Tombol;
